@@ -1,0 +1,15 @@
+1. Detect unmet demand
+
+The data science engine analyzes permitted search-query, review, and catalog data to identify recurring needs that existing products don't adequately satisfy. This collects the data needed to tell arcade what to design
+
+2. Generate a real product
+
+Arcade creates an eligible physical product and returns its actual guaranteed price for supported category such as table linens, pillows, or scarves.
+
+3. Turn it into a sponsored concept
+
+The arcade design feeds into a brand's sponsored concept in a relevant shopping context. Shoppers can express purchase intent or join a launch list; no unsupported claim of immediate inventory availability.
+
+4. Measure demand before scaling
+
+Compare engagement and qualified purchase intent across concepts. Where possible, use randomized exposure and control groups to distinguish genuine lift from ordinary interest. Out of scope for the demo
