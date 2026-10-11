@@ -2,17 +2,19 @@
 
 ## The Problem
 
-By the time a retail brand spots a viral trend, designs a product, clears supply chain, and launches a campaign, the trend is over. That process takes about three weeks.
+Traditional retail media is beholden to their brands' and advertisers' existing product catalog. By the time a retail brand spots a viral trend, designs a product, clears supply chain, and launches a campaign and manufactures relevant products, the trend is over. That process can take from 3 weeks to several months.
 
 ## Our Solution
 
-The Viral Vector Engine shortens that cycle to seconds:
+ Using our product, each retailer/brand is able to capitalize on what's trending, and using the Arcade-powered Ad Slot, turns a retailer’s existing sponsored placement into a source of new product supply. When Arcade wins the auction on a product page, the slot calls the Arcade API server-side and shows a complementary product designed for that page through our data science engine. The ad then links to Arcade checkout, so the impression can end in a real purchase, and we measure it with exposed-versus-holdout tests on attachment rate, basket value, and incremental conversion.
+ 
+ The DynamicShop shortens that cycle to seconds:
 
 1. **Product page input:** a shopper views a product page, such as a women's black wool jacket.
-2. **Demand Intelligence:** identifies a complementary accessory (scarves, ribbon scarves, or pocket squares) and a trending style for it.
-3. **Prompt Generator:** turns that trend into a design prompt (mocked Gemini call).
-4. **Arcade Engine:** calls the Arcade API chain (`categories/list` → `patterns/create` → `products/create` → `checkouts/create`) to produce a production-ready product image and checkout link. Results are cached.
-5. **Adtech Layer:** injects the generated product into the page's sponsored ad slot as a shoppable banner.
+2. **Demand Intelligence:** identifies a complementary accessory (scarves, ribbon scarves, or pocket squares) and a trending style based on what users are talking about.
+3. **Prompt Generator:** turns that trend into a design prompt.
+4. **Arcade Engine:** calls the Arcade API chain (`categories/list` → `patterns/create` → `products/create` → `checkouts/create`) to produce a production-ready product image and checkout link. (For demo, Results are cached.)
+5. **Adtech Layer:** injects the generated product into the page's sponsored ad slot as a shoppable banner. (this needs to go through the sponsored winning bid process in prod)
 
 The three components run as sequential steps in the demo, not as side-by-side panels.
 
