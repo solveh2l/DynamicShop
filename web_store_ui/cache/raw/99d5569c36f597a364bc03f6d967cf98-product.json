@@ -1,0 +1,36 @@
+{
+  "productId": "56070e5f-7ba0-400e-b8e9-7f9ef01a9f2f",
+  "title": "100% Silk Twill Pocket Square, Hand-rolled Hem",
+  "categoryId": "60b9b5bd-89ed-4e20-b871-4af5e838b385",
+  "maker": {
+    "makerId": "372f8aff-affc-45d1-b7c4-052636d223f1",
+    "name": "Odette"
+  },
+  "selections": {
+    "fabric": "silk",
+    "size": "16x16",
+    "hem_finish": "handrolled_hem"
+  },
+  "selectionLabel": "Silk Twill • 16\" x 16\" • Hand-rolled Hem",
+  "imageUrl": "https://storage.googleapis.com/public-user-designs-arcade-ai-prod/overlay-design-jobs/08a8e67a-771b-4d79-b9a6-795cafc3b068/baseform_overlay_image/d0acd7a2663d4a332ed8c9f2adfb0cc69cb5962f9eb9027e623300b1212e3475.png",
+  "createdAt": "2026-10-11T19:56:42.793Z",
+  "images": [
+    {
+      "url": "https://storage.googleapis.com/public-user-designs-arcade-ai-prod/overlay-design-jobs/08a8e67a-771b-4d79-b9a6-795cafc3b068/baseform_overlay_image/d0acd7a2663d4a332ed8c9f2adfb0cc69cb5962f9eb9027e623300b1212e3475.png"
+    },
+    {
+      "url": "https://storage.googleapis.com/public-user-designs-arcade-ai-prod/overlay-design-jobs/08a8e67a-771b-4d79-b9a6-795cafc3b068/insitu_overlay_image/a0800a71ca042dbcfd73ee078ca6b1dbcb8fdecac71cba704ace9ec25e239c2f.png"
+    }
+  ],
+  "description": "Our Pocket Squares are each handcrafted by independent makers. As a result, there may be subtle variations in design, hue, or yarn color – true hallmarks of authentic, artisanal hand made Pocket Squares crafted just for you.\n\n- Fabric: Silk Twill\n- Size: 16\" x 16\"\n- Hem Finish: Hand-rolled Hem",
+  "careInstructions": "**100% Silk**: To maintain the elegant shape of your pocket square, keep it away from rain, water, and chemicals. To maintain its shape, it is optimal to store it flat and untied. When needed, professionally dry clean only.",
+  "volumeDiscounts": {
+    "currency": "USD",
+    "tiers": []
+  },
+  "patternId": "cmv48ussj00fnlg10wpbyzm96",
+  "unitPrice": {
+    "amount": "98.00",
+    "currency": "USD"
+  }
+}

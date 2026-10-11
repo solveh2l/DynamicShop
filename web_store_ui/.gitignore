@@ -1,4 +1,4 @@
 .env
-cache/
+
 .arcade-api/
 node_modules/
