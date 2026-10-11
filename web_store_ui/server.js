@@ -217,8 +217,10 @@ function createAppServer(deps = {}) {
 const server = createAppServer();
 
 if (require.main === module) {
-  // 127.0.0.1 only: this server can spend your Arcade account, so never expose it on the network.
-  server.listen(PORT, '127.0.0.1', () => console.log(`DynamicShop demo: http://localhost:${PORT}`));
+  // Defaults to 127.0.0.1 so a laptop run is never exposed. Hosts like Render set HOST=0.0.0.0.
+  // Re-imagine stays blocked for any non-localhost Host header, so exposure only reaches checkout.
+  const HOST = process.env.HOST || '127.0.0.1';
+  server.listen(PORT, HOST, () => console.log(`DynamicShop demo: http://${HOST}:${PORT}`));
 }
 
 module.exports = { server, createAppServer };
