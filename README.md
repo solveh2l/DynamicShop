@@ -18,15 +18,15 @@ Traditional retail media is beholden to their brands' and advertisers' existing 
 
 The three components run as sequential steps in the demo, not as side-by-side panels.
 
-This is a mock hackathon project. Everything runs locally except the Arcade API calls, which are cached so the demo never waits on live requests.
+This is a mock hackathon project. The Arcade API calls are cached so the demo never waits on live requests.
 
 ## Live Demo
 
 **https://dynamicshop-cwsa.onrender.com/**
 
-Before you open the link, make sure your **ad blocker is off** for this site. Otherwise the sponsored ad slot will not appear.
+The demo is hosted on Render. Before you open the link, make sure your **ad blocker is off** for this site. Otherwise the sponsored ad slot will not appear.
 
-If you want to re-create this yourself, you are welcome to clone the repo and start a server locally (see Current Setup below).
+If you want to re-create this yourself, you are welcome to clone the repo and run your own copy (see Current Setup below).
 
 ## Current Setup
 
@@ -34,7 +34,7 @@ The demo lives in `web_store_ui/`:
 
 - **Stack:** plain Node.js with no npm dependencies (Node 18+).
 - **Store pages:** `web_store_ui/public/store/` (product pages with the ad slot), with static assets in `web_store_ui/public/`.
-- **Server:** `web_store_ui/server.js`, listening on `127.0.0.1:3000` by default (override with `PORT`).
+- **Server:** `web_store_ui/server.js`. It listens on `127.0.0.1:3000` by default. Set `PORT` and `HOST` to change this (the Render deployment uses `HOST=0.0.0.0`).
 - **Arcade demo cache:** `web_store_ui/cache/` holds the generated images and raw API responses, so the app serves them without calling Arcade.
 - **Re-imagine:** the button in the ad banner runs the full workflow again and makes a fresh Arcade API call. This creates a new product in the Arcade account and overwrites the cached item for that product.
 
@@ -47,13 +47,13 @@ npm start
 
 Then open `http://localhost:3000`.
 
-The hosted copy on Render sets `PUBLIC_HOST` to its own hostname, so Instant Checkout and Re-imagine work there. To run your own copy with those features on a different hostname, start the server with that hostname in `PUBLIC_HOST`:
+To run your own copy on a hostname other than localhost, set `PUBLIC_HOST` to that hostname (no `https://`):
 
 ```sh
-PUBLIC_HOST=your-host.example.com npm start
+PUBLIC_HOST=your-host.example.com HOST=0.0.0.0 npm start
 ```
 
-Without `PUBLIC_HOST`, Instant Checkout and Re-imagine work on localhost only. Re-imagine needs `ARCADE_API_KEY` to be set on the server.
+Without `PUBLIC_HOST`, Instant Checkout and Re-imagine work on localhost only. Re-imagine also needs `ARCADE_API_KEY` set on the server.
 
 ### Other commands
 
@@ -62,4 +62,8 @@ Without `PUBLIC_HOST`, Instant Checkout and Re-imagine work on localhost only. R
 
 ### Hosting
 
-The public demo runs on Render as a web service, deployed from this repo. It sets `HOST=0.0.0.0` so the server accepts outside connections, and `PUBLIC_HOST` to its own hostname.
+The public demo runs on Render as a web service, deployed from this repo with Auto-Deploy on each push to `main`. Render needs these settings:
+
+- **Root directory:** `web_store_ui`
+- **Start command:** `npm start`
+- **Environment variables:** `HOST=0.0.0.0`, `PUBLIC_HOST=dynamicshop-cwsa.onrender.com`, and `ARCADE_API_KEY`
