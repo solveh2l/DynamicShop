@@ -53,7 +53,7 @@ To make Instant Checkout work through the public tunnel link, start the server w
 PUBLIC_HOST=striking-showing-celebrity-promised.trycloudflare.com npm start
 ```
 
-Without `PUBLIC_HOST`, Instant Checkout works on localhost only. Re-imagine is localhost-only either way.
+Without `PUBLIC_HOST`, Instant Checkout and Re-imagine work on localhost only. With `PUBLIC_HOST` set, both also work on that hostname. Re-imagine needs `ARCADE_API_KEY` to be set on the server.
 
 ### Other commands
 

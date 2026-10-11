@@ -151,7 +151,7 @@ function createAppServer(deps = {}) {
       }
 
       if (req.method === 'POST' && url.pathname === '/api/reimagine') {
-        if (!isSameOriginJson(req)) return sendJson(res, 403, { error: 'forbidden' });
+        if (!isSameOriginJson(req, { allowPublicHost: true })) return sendJson(res, 403, { error: 'forbidden' });
         const { slug } = await readBody(req);
         const product = getProduct(slug);
         if (!product) return sendJson(res, 404, { error: 'unknown_product' });

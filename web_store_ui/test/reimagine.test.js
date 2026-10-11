@@ -236,6 +236,19 @@ test('spending endpoints reject cross-origin, wrong content-type, and foreign Ho
   } finally { server.close(); }
 });
 
+test('PUBLIC_HOST: Re-imagine and checkout accept the public host, still reject others', async () => {
+  process.env.PUBLIC_HOST = 'public.example';
+  let generated = 0;
+  const { server, port } = await makeServer({ hasKey: () => true, generate: async () => { generated++; return {}; }, addCheckout: async () => { generated++; } });
+  try {
+    const ok = await call(port, 'POST', '/api/reimagine', { slug: overcoat.slug }, { Host: 'public.example' });
+    assert.strictEqual(ok.status, 202, 'reimagine on public host');
+    await pollStatus(port, ok.json.jobId);
+    const bad = await call(port, 'POST', '/api/reimagine', { slug: overcoat.slug }, { Host: 'attacker.example' });
+    assert.strictEqual(bad.status, 403, 'reimagine on foreign host');
+  } finally { delete process.env.PUBLIC_HOST; server.close(); }
+});
+
 test('reimagine: unknown product 404, missing key 503 with guidance', async () => {
   const { server, port } = await makeServer({ hasKey: () => false, generate: async () => ({}) });
   try {
