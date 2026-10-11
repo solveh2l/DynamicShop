@@ -1,0 +1,32 @@
+{
+  "productId": "1b1b284f-72c2-42f8-8efd-e5d7a904add4",
+  "title": "100% Silk Ribbon Scarf",
+  "categoryId": "27b5f126-6464-4629-927e-be965be6ad5b",
+  "maker": {
+    "makerId": "372f8aff-affc-45d1-b7c4-052636d223f1",
+    "name": "Odette"
+  },
+  "selections": {
+    "fabric": "silk",
+    "size": "2x35"
+  },
+  "selectionLabel": "100% Silk • 2\" x 35\"",
+  "imageUrl": "https://storage.googleapis.com/public-user-designs-arcade-ai-prod/overlay-design-jobs/fef5f98e-39a9-48cc-8748-f43401d63c33/baseform_overlay_image/a12f0a84b8407286561eb88b7a7154da63574fb8055bc6d2b924e6fe924b6230.png",
+  "createdAt": "2026-10-11T19:54:53.141Z",
+  "images": [
+    {
+      "url": "https://storage.googleapis.com/public-user-designs-arcade-ai-prod/overlay-design-jobs/fef5f98e-39a9-48cc-8748-f43401d63c33/baseform_overlay_image/a12f0a84b8407286561eb88b7a7154da63574fb8055bc6d2b924e6fe924b6230.png"
+    }
+  ],
+  "description": "Our Ribbon Scarf are each handcrafted by independent makers. As a result, there may be subtle variations in design, hue, or yarn color – true hallmarks of authentic, artisanal hand made Ribbon Scarf crafted just for you.\r\n\r\nLong, slim, and endlessly versatile, this ribbon scarf is made to be styled your way. Tie it around a handbag handle, wrap it at the neck, knot it at your wrist, or weave it into your hair.\n\n- Fabric: 100% Silk\n- Size: 2\" x 35\"",
+  "careInstructions": "**100% Silk**: To maintain the elegant drape of your silk scarf, keep it away from rain, water, and chemicals. To maintain its shape, it is optimal to store it flat and untied. When needed, professionally dry clean only.",
+  "volumeDiscounts": {
+    "currency": "USD",
+    "tiers": []
+  },
+  "patternId": "cmv48sg4p00f6lg10hx2ioqox",
+  "unitPrice": {
+    "amount": "112.00",
+    "currency": "USD"
+  }
+}

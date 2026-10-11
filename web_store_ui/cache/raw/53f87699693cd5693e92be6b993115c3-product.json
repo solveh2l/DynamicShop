@@ -1,0 +1,31 @@
+{
+  "productId": "0a56549a-5ba8-4f96-85ed-f6140ec071c4",
+  "title": "14k Gold Vermeil Dangle Earring",
+  "categoryId": "fd810c00-c58c-4147-a946-f3e4fb5d6939",
+  "maker": {
+    "makerId": "4f607682-4e95-4ed3-87cc-58b36239a277",
+    "name": "Brio"
+  },
+  "selections": {
+    "material": "14k Gold Vermeil"
+  },
+  "selectionLabel": "14k Gold Vermeil",
+  "imageUrl": "https://storage.googleapis.com/public-user-designs-arcade-ai-prod/product-sources/668b93a1-cf52-464b-8d13-208e0b659b64/source.png",
+  "createdAt": "2026-10-11T20:03:56.380Z",
+  "images": [
+    {
+      "url": "https://storage.googleapis.com/public-user-designs-arcade-ai-prod/product-sources/668b93a1-cf52-464b-8d13-208e0b659b64/source.png"
+    }
+  ],
+  "description": "Each piece of jewelry is handcrafted by independent makers. As a result, there may be subtle variations in design, hue, and stone appearance – true hallmarks of authentic, artisanal jewelry crafted just for you.\n\n- Aesthetic: No Preference\n- Earring Length: 19.5 mm\n- Feels: No Preference\n- Material: 14k Gold Vermeil",
+  "careInstructions": "",
+  "volumeDiscounts": {
+    "currency": "USD",
+    "tiers": []
+  },
+  "patternId": "cmv49434h00ktpa10o2gbvu1b",
+  "unitPrice": {
+    "amount": "82.00",
+    "currency": "USD"
+  }
+}

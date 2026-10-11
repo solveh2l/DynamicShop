@@ -1,0 +1,59 @@
+{
+  "blanket-plaid-scarf": {
+    "mock": false,
+    "viralSources": [
+      "Lenny Kravitz's Gigantic Blanket Scarf (the ultimate internet meme)",
+      "Acne Studios' Plaid Mohair Scarf (the ultimate TikTok fashion aesthetic)"
+    ],
+    "descriptors": ["oversized blanket-like plaid", "soft brushed mohair texture", "cozy statement piece"],
+    "palette": "deep charcoal, cream and muted burgundy"
+  },
+  "gold-deco-scarf": {
+    "mock": true,
+    "viralSources": [
+      "Black scarves with fine gold art-deco detailing (the quiet-luxury way to finish a winter coat)"
+    ],
+    "descriptors": ["tonal black ground", "delicate gold art-deco line work", "understated, timeless elegance"],
+    "palette": "black, charcoal and antique gold"
+  },
+  "bag-ribbon-scarf": {
+    "mock": true,
+    "viralSources": [
+      "Silk ribbon scarves tied to bag handles (the quiet-luxury styling trend)"
+    ],
+    "descriptors": ["satin ribbon stripes", "soft sheen", "romantic bow styling"],
+    "palette": "ivory, antique gold and black"
+  },
+  "paisley-pocket-square": {
+    "mock": true,
+    "viralSources": [
+      "Paisley silk pocket squares (the old-money revival on TikTok)"
+    ],
+    "descriptors": ["classic paisley", "fine silk twill", "rolled hem"],
+    "palette": "midnight navy, gold and burgundy"
+  },
+  "gold-horsebit-pocket-square": {
+    "mock": true,
+    "viralSources": [
+      "Equestrian horsebit-chain prints (the runway-to-TikTok loafer moment)"
+    ],
+    "descriptors": ["interlocking gold horsebit chain motif", "fine silk twill", "hand-rolled edge"],
+    "palette": "black, gold and ivory"
+  },
+  "camel-herringbone-scarf": {
+    "mock": true,
+    "viralSources": [
+      "Camel cashmere herringbone scarves (the quiet-luxury winter staple)"
+    ],
+    "descriptors": ["camel herringbone weave", "brushed cashmere softness", "understated fringe"],
+    "palette": "camel, cream and black"
+  },
+  "gold-chain-dangle-earrings": {
+    "mock": true,
+    "viralSources": [
+      "Sculptural gold chain drop earrings (the evening-wear jewelry trend of the season)"
+    ],
+    "descriptors": ["fine gold chain cascade", "sculptural statement drop", "polished finish"],
+    "palette": "14k gold vermeil"
+  }
+}

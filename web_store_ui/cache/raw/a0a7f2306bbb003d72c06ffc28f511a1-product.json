@@ -1,0 +1,36 @@
+{
+  "productId": "b0ed95ce-c04f-4bd3-90e0-3194cf1703b5",
+  "title": "100% Cotton Lightweight Gauze Scarf, Raw Hem",
+  "categoryId": "687b34ae-209d-461d-b681-4b0426400be8",
+  "maker": {
+    "makerId": "489a9dfd-9208-4de8-b033-8d2ccbca2acd",
+    "name": "JB & Sons"
+  },
+  "selections": {
+    "fabric": "cotton",
+    "size": "26x26",
+    "hem_finish": "raw_hem"
+  },
+  "selectionLabel": "Cotton Lightweight Gauze • 26\" x 26\" • Raw Hem",
+  "imageUrl": "https://storage.googleapis.com/public-user-designs-arcade-ai-prod/2026-10-11-user-image-48ab7acd-324f-4e2e-9d0a-1f20775fcf86.png",
+  "createdAt": "2026-10-11T20:18:20.249Z",
+  "images": [
+    {
+      "url": "https://storage.googleapis.com/public-user-designs-arcade-ai-prod/2026-10-11-user-image-48ab7acd-324f-4e2e-9d0a-1f20775fcf86.png"
+    },
+    {
+      "url": "https://storage.googleapis.com/public-user-designs-arcade-ai-prod/2026-10-11-user-image-e96c2152-3b85-4caa-a1ca-6149c6fc6657.png"
+    }
+  ],
+  "description": "Our Scarves are each handcrafted by independent makers. As a result, there may be subtle variations in design, hue, or yarn color – true hallmarks of authentic, artisanal hand made Scarves crafted just for you.\n\n- Fabric: Cotton Lightweight Gauze\n- Size: 26\" x 26\"\n- Hem Finish: Raw Hem",
+  "careInstructions": "**Cotton Poplin:** Our Cotton Poplin scarves are made from a smooth, tightly woven cloth with a crisp finish that renders your printed artwork in sharp, vivid detail. Made of 100% cotton, this lightweight fabric drapes softly and ties easily, making it an effortless everyday accessory.\r\n\r\n* Cold wash, gentle cycle with like colors\r\n* Tumble dry low; remove promptly\r\n* Only non-chlorine bleach if needed\r\n* Cool iron if desired",
+  "volumeDiscounts": {
+    "currency": "USD",
+    "tiers": []
+  },
+  "patternId": "cmv49mlx400q0lg10zm7sbnk3",
+  "unitPrice": {
+    "amount": "21.83",
+    "currency": "USD"
+  }
+}

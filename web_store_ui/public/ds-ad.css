@@ -1,0 +1,29 @@
+/* Ad styling, themed to the FancyPants storefront (gold on black). All classes prefixed ds-. */
+#ad-slot { margin: 8px 0; }
+.ds-ad { display: flex; gap: 20px; align-items: stretch; border: 1px solid rgba(215, 169, 79, 0.4); background: #110f0d; padding: 16px; animation: ds-fade 0.7s ease; }
+.ds-ad img { width: 176px; height: 176px; object-fit: cover; flex-shrink: 0; background: #080706; }
+.ds-ad-body { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: space-between; gap: 12px; }
+.ds-label { display: flex; gap: 8px; align-items: center; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #a49e91; }
+.ds-label .ds-edit { color: #d7a94f; }
+.ds-title { font-family: "Cormorant Garamond", Georgia, serif; font-size: 22px; line-height: 1.2; margin: 6px 0 0; color: #f3eee3; }
+.ds-viral { font-size: 12px; color: #a49e91; margin: 6px 0 0; }
+.ds-price { font-size: 20px; letter-spacing: 0.04em; color: #d7a94f; margin-top: 6px; }
+.ds-note { font-size: 11px; color: #a49e91; }
+.ds-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.ds-reimagine { background: transparent; color: #a49e91; border: 1px solid rgba(215, 169, 79, 0.3); padding: 10px 16px; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; cursor: pointer; transition: color 0.2s, border-color 0.2s; }
+.ds-reimagine:hover:not(:disabled) { color: #d7a94f; border-color: #d7a94f; }
+.ds-reimagine:disabled, .ds-checkout:disabled { opacity: 0.55; cursor: default; }
+.ds-progress { margin: 8px 0 0; font-size: 12px; color: #d7a94f; }
+.ds-progress.ds-error-text { color: #f14d4c; }
+.ds-reimagine.ds-loading:disabled { opacity: 1; color: #d7a94f; border-color: #d7a94f; }
+.ds-reimagine .ds-spinner { width: 11px; height: 11px; margin-right: 8px; }
+.ds-checkout { align-self: flex-start; background: transparent; color: #d7a94f; border: 1px solid #d7a94f; padding: 10px 20px; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; cursor: pointer; transition: background 0.2s, color 0.2s; }
+.ds-checkout:hover:not(:disabled) { background: #d7a94f; color: #080706; }
+.ds-checkout:disabled { background: #d7a94f; color: #080706; cursor: default; }
+.ds-status { padding: 24px; border: 1px dashed rgba(215, 169, 79, 0.4); color: #a49e91; font-size: 13px; letter-spacing: 0.04em; }
+.ds-status.ds-error { border-color: #f14d4c; color: #f14d4c; }
+.ds-spinner { display: inline-block; width: 12px; height: 12px; margin-right: 10px; border: 2px solid #d7a94f; border-top-color: transparent; border-radius: 50%; animation: ds-spin 0.8s linear infinite; vertical-align: -2px; }
+
+@keyframes ds-spin { to { transform: rotate(360deg); } }
+@keyframes ds-fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (max-width: 520px) { .ds-ad { flex-direction: column; } .ds-ad img { width: 100%; height: auto; aspect-ratio: 1; } }

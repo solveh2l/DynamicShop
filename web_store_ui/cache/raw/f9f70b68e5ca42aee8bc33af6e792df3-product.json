@@ -1,0 +1,36 @@
+{
+  "productId": "55a4c243-ed6e-48f9-b466-1c70d996683e",
+  "title": "100% Cotton Poplin Scarf, Raw Hem",
+  "categoryId": "687b34ae-209d-461d-b681-4b0426400be8",
+  "maker": {
+    "makerId": "489a9dfd-9208-4de8-b033-8d2ccbca2acd",
+    "name": "JB & Sons"
+  },
+  "selections": {
+    "fabric": "cotton_poplin",
+    "size": "22x22",
+    "hem_finish": "raw_hem"
+  },
+  "selectionLabel": "Cotton Poplin • 22\" x 22\" • Raw Hem",
+  "imageUrl": "https://storage.googleapis.com/public-user-designs-arcade-ai-prod/2026-10-11-user-image-a4afee87-bc8e-4238-ba4f-bf85f53cc35f.png",
+  "createdAt": "2026-10-11T20:13:15.386Z",
+  "images": [
+    {
+      "url": "https://storage.googleapis.com/public-user-designs-arcade-ai-prod/2026-10-11-user-image-a4afee87-bc8e-4238-ba4f-bf85f53cc35f.png"
+    },
+    {
+      "url": "https://storage.googleapis.com/public-user-designs-arcade-ai-prod/2026-10-11-user-image-0b482077-60fd-4c1c-b402-3405a181fdc9.png"
+    }
+  ],
+  "description": "Our Scarves are each handcrafted by independent makers. As a result, there may be subtle variations in design, hue, or yarn color – true hallmarks of authentic, artisanal hand made Scarves crafted just for you.\n\n- Fabric: Cotton Poplin\n- Size: 22\" x 22\"\n- Hem Finish: Raw Hem",
+  "careInstructions": "**Cotton Poplin:** Our Cotton Poplin scarves are made from a smooth, tightly woven cloth with a crisp finish that renders your printed artwork in sharp, vivid detail. Made of 100% cotton, this lightweight fabric drapes softly and ties easily, making it an effortless everyday accessory.\r\n\r\n* Cold wash, gentle cycle with like colors\r\n* Tumble dry low; remove promptly\r\n* Only non-chlorine bleach if needed\r\n* Cool iron if desired",
+  "volumeDiscounts": {
+    "currency": "USD",
+    "tiers": []
+  },
+  "patternId": "cmv49g2pd00y4lm1071ewj8to",
+  "unitPrice": {
+    "amount": "24.26",
+    "currency": "USD"
+  }
+}

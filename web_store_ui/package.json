@@ -1,0 +1,14 @@
+{
+  "name": "dynamicshop-web-store-ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Viral Vector Engine demo: mock store with a dynamically generated Arcade ad",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "build-pages": "node scripts/build-pdps.js",
+    "seed": "node scripts/seed-fixture.js",
+    "categories": "node scripts/list-categories.js",
+    "generate-cache": "node scripts/generate-cache.js"
+  }
+}

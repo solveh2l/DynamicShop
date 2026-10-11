@@ -1,0 +1,148 @@
+{
+  "f9f70b68e5ca42aee8bc33af6e792df3": {
+    "prompt": "Seamless repeating textile print for a scarf: oversized plaid mohair, oversized blanket-like plaid, soft brushed mohair texture, cozy statement piece. Color palette: deep charcoal, cream and muted burgundy, chosen to complement a black cashmere overcoat. High detail, rich woven texture, no text, no logos.",
+    "productName": "Noir Plaid Mohair Scarf",
+    "arcadeTitle": "100% Cotton Poplin Scarf, Raw Hem",
+    "category": "Scarves",
+    "imageUrl": "/cache/images/f9f70b68e5ca42aee8bc33af6e792df3-1791749601978.png",
+    "patternId": "cmv49g2pd00y4lm1071ewj8to",
+    "productId": "55a4c243-ed6e-48f9-b466-1c70d996683e",
+    "unitPrice": {
+      "amount": "24.26",
+      "currency": "USD"
+    },
+    "price": "$24.26",
+    "checkoutInfo": null,
+    "fixture": false,
+    "version": 2,
+    "createdAt": "2026-10-11T20:13:24.156Z"
+  },
+  "3e1be333e0a7d62f9fccc8a50e17eac1": {
+    "prompt": "Seamless repeating textile print for a ribbon scarf: satin ribbon, satin ribbon stripes, soft sheen, romantic bow styling. Color palette: ivory, antique gold and black, chosen to complement a black calfskin gold clasp tote. High detail, rich woven texture, no text, no logos.",
+    "productName": "Gilded Ribbon Bag Scarf",
+    "arcadeTitle": "100% Silk Ribbon Scarf",
+    "category": "Ribbon Scarf",
+    "imageUrl": "/cache/images/3e1be333e0a7d62f9fccc8a50e17eac1.png",
+    "patternId": "cmv48sg4p00f6lg10hx2ioqox",
+    "productId": "1b1b284f-72c2-42f8-8efd-e5d7a904add4",
+    "unitPrice": {
+      "amount": "112.00",
+      "currency": "USD"
+    },
+    "price": "$112.00",
+    "checkoutInfo": {
+      "checkoutId": "1662763630703",
+      "checkoutUrl": "https://checkout.arcade.ai/65452179567/invoices/b386b58d35edda436d1bb97734dcac6e",
+      "createdAt": "2026-10-11T19:55:10.218Z"
+    },
+    "fixture": false,
+    "createdAt": "2026-10-11T19:55:10.219Z"
+  },
+  "35b6a1ee2e60a02a86ab4e26be540cde": {
+    "prompt": "Seamless repeating textile print for a pocket square: paisley silk, classic paisley, fine silk twill, rolled hem. Color palette: midnight navy, gold and burgundy, chosen to complement a black silk satin lapel blazer. High detail, rich woven texture, no text, no logos.",
+    "productName": "Onyx Paisley Silk Pocket Square",
+    "arcadeTitle": "100% Silk Twill Pocket Square, Hand-rolled Hem",
+    "category": "Pocket Squares",
+    "imageUrl": "/cache/images/35b6a1ee2e60a02a86ab4e26be540cde.png",
+    "patternId": "cmv48tkb700m5lm103h7kpxse",
+    "productId": "568d46b0-cb06-4297-8f40-faef40e6b0a0",
+    "unitPrice": {
+      "amount": "98.00",
+      "currency": "USD"
+    },
+    "price": "$98.00",
+    "checkoutInfo": {
+      "checkoutId": "1662763892847",
+      "checkoutUrl": "https://checkout.arcade.ai/65452179567/invoices/d2f7f76123868cb8906bf19cb5403583",
+      "createdAt": "2026-10-11T19:56:07.848Z"
+    },
+    "fixture": false,
+    "createdAt": "2026-10-11T19:56:07.848Z"
+  },
+  "99d5569c36f597a364bc03f6d967cf98": {
+    "prompt": "Seamless repeating textile print for a pocket square: gold horsebit chain, interlocking gold horsebit chain motif, fine silk twill, hand-rolled edge. Color palette: black, gold and ivory, chosen to complement a black patent leather gold horsebit loafers. High detail, rich woven texture, no text, no logos.",
+    "productName": "Horsebit Gold Silk Pocket Square",
+    "arcadeTitle": "100% Silk Twill Pocket Square, Hand-rolled Hem",
+    "category": "Pocket Squares",
+    "imageUrl": "/cache/images/99d5569c36f597a364bc03f6d967cf98.png",
+    "patternId": "cmv48ussj00fnlg10wpbyzm96",
+    "productId": "56070e5f-7ba0-400e-b8e9-7f9ef01a9f2f",
+    "unitPrice": {
+      "amount": "98.00",
+      "currency": "USD"
+    },
+    "price": "$98.00",
+    "checkoutInfo": {
+      "checkoutId": "1662764089455",
+      "checkoutUrl": "https://checkout.arcade.ai/65452179567/invoices/8618511fb061963654a05bad7b418001",
+      "createdAt": "2026-10-11T19:57:04.535Z"
+    },
+    "fixture": false,
+    "createdAt": "2026-10-11T19:57:04.535Z"
+  },
+  "b0519e57f925de67d07d55574fe37893": {
+    "prompt": "Seamless repeating textile print for a scarf: camel herringbone cashmere, camel herringbone weave, brushed cashmere softness, understated fringe. Color palette: camel, cream and black, chosen to complement a black lambskin gloves. High detail, rich woven texture, no text, no logos.",
+    "productName": "Camel Herringbone Cashmere Scarf",
+    "arcadeTitle": "100% Cotton Lightweight Gauze Scarf, Embroidered Hem",
+    "category": "Scarves",
+    "imageUrl": "/cache/images/b0519e57f925de67d07d55574fe37893.png",
+    "patternId": "cmv48vuri00gfpa10svu56q2h",
+    "productId": "b3a1c1a7-0e89-4c50-bec2-675d15a4606b",
+    "unitPrice": {
+      "amount": "24.26",
+      "currency": "USD"
+    },
+    "price": "$24.26",
+    "checkoutInfo": {
+      "checkoutId": "1662764318831",
+      "checkoutUrl": "https://checkout.arcade.ai/65452179567/invoices/f0173a6ecc10beef1a11fcd1abae0792",
+      "createdAt": "2026-10-11T19:57:45.638Z"
+    },
+    "fixture": false,
+    "createdAt": "2026-10-11T19:57:45.638Z"
+  },
+  "53f87699693cd5693e92be6b993115c3": {
+    "prompt": "gold chain drop dangle earrings: fine gold chain cascade, sculptural statement drop, polished finish. Material: 14k gold vermeil. Designed to complement a black satin gold chain straps evening dress. Refined, elegant, high detail.",
+    "productName": "Eclipse Gold Chain Drop Earrings",
+    "arcadeTitle": "14k Gold Vermeil Dangle Earring",
+    "category": "Dangle Earrings",
+    "imageUrl": "/cache/images/53f87699693cd5693e92be6b993115c3-1791749039803.png",
+    "patternId": "cmv49434h00ktpa10o2gbvu1b",
+    "productId": "0a56549a-5ba8-4f96-85ed-f6140ec071c4",
+    "unitPrice": {
+      "amount": "82.00",
+      "currency": "USD"
+    },
+    "price": "$82.00",
+    "checkoutInfo": {
+      "checkoutId": "1662766121071",
+      "checkoutUrl": "https://checkout.arcade.ai/65452179567/invoices/357d5a0c5f344d52c01b7514bd567cf8",
+      "createdAt": "2026-10-11T20:04:06.855Z"
+    },
+    "fixture": false,
+    "version": 1,
+    "createdAt": "2026-10-11T20:04:06.856Z"
+  },
+  "a0a7f2306bbb003d72c06ffc28f511a1": {
+    "prompt": "Seamless repeating textile print for a scarf: fine gold art-deco motif on black, tonal black ground, delicate gold art-deco line work, understated, timeless elegance. Color palette: black, charcoal and antique gold, chosen to complement a black cashmere overcoat. High detail, rich woven texture, no text, no logos.",
+    "productName": "Noir Gold Deco Scarf",
+    "arcadeTitle": "100% Cotton Lightweight Gauze Scarf, Raw Hem",
+    "category": "Scarves",
+    "imageUrl": "/cache/images/a0a7f2306bbb003d72c06ffc28f511a1-1791749907572.png",
+    "patternId": "cmv49mlx400q0lg10zm7sbnk3",
+    "productId": "b0ed95ce-c04f-4bd3-90e0-3194cf1703b5",
+    "unitPrice": {
+      "amount": "21.83",
+      "currency": "USD"
+    },
+    "price": "$21.83",
+    "checkoutInfo": {
+      "checkoutId": "1662769889391",
+      "checkoutUrl": "https://checkout.arcade.ai/65452179567/invoices/41099836634202cdeb45b7f4d07b2b78",
+      "createdAt": "2026-10-11T20:18:35.212Z"
+    },
+    "fixture": false,
+    "version": 1,
+    "createdAt": "2026-10-11T20:18:35.213Z"
+  }
+}
