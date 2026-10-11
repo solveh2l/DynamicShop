@@ -6,7 +6,7 @@ Traditional retail media is beholden to their brands' and advertisers' existing 
 
 ## Our Solution
 
- Using our product, each retailer/brand is able to capitalize on what's trending, and using the Arcade-powered Ad Slot, turns a retailer’s existing sponsored placement into a source of new product supply. When Arcade wins the auction on a product page, the slot calls the Arcade API server-side and shows a complementary product designed for that page through our data science engine. The ad then links to Arcade checkout, so the impression can end in a real purchase, and we measure it with exposed-versus-holdout tests on attachment rate, basket value, and incremental conversion.
+ Using our product, each retailer/brand is able to capitalize on what's trending, and using the Arcade-powered Ad Slot, turns a retailer’s existing sponsored placement into a source of new product supply. When Arcade wins the auction on a product page, the slot calls the Arcade API server-side and shows a complementary product designed for that page through our data science engine. The ad then links to Arcade checkout, so the impression can end in a real purchase. In the future as a value addition to the roadmap, we should measure it with exposed-versus-holdout tests on attachment rate, basket value, and incremental conversion.
  
  The DynamicShop shortens that cycle to seconds:
 
