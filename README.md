@@ -1,28 +1,69 @@
-DynamicShop
+# DynamicShop
 
+## The Problem
 
-MOCK HACKATHON PROJECT (LOCAL MOSTLY — except for arcade api calls, which will also be cached to avoid real time calls during demo)
+By the time a retail brand spots a viral trend, designs a product, clears supply chain, and launches a campaign, the trend is over. That process takes about three weeks.
 
-By the time a retail brand notices a viral trend, designs a product, clears it through supply chain, and launches a media campaign, the trend is completely dead. We work in retail media and data science—we decided to build an enterprise engine that reduces that 3-week timeline to mere moments.
+## Our Solution
 
-Instead of showing a boring banner ad for a generic brand, our engine takes a product page as input, identifies a complementary accessory (Scarves / Ribbon Scarves / Pocket Squares), finds the latest viral design aesthetic for that accessory, and injects it as a shoppable ad on the product page—all in seconds.
+The Viral Vector Engine shortens that cycle to seconds:
 
+1. **Product page input:** a shopper views a product page, such as a women's black wool jacket.
+2. **Demand Intelligence:** identifies a complementary accessory (scarves, ribbon scarves, or pocket squares) and a trending style for it.
+3. **Prompt Generator:** turns that trend into a design prompt (mocked Gemini call).
+4. **Arcade Engine:** calls the Arcade API chain (`categories/list` → `patterns/create` → `products/create` → `checkouts/create`) to produce a production-ready product image and checkout link. Results are cached.
+5. **Adtech Layer:** injects the generated product into the page's sponsored ad slot as a shoppable banner.
 
-(All Mocked): "We built The Viral Vector Engine. Our engine takes a product page, identifies a complementary accessory, finds the latest viral design aesthetic for it, pulls a production-ready image and guaranteed price from Arcade, and pushes a dynamic shoppable ad live into the product page's ad slot in real-time."
+The three components run as sequential steps in the demo, not as side-by-side panels.
 
+This is a mock hackathon project. Everything runs locally except the Arcade API calls, which are cached so the demo never waits on live requests.
 
+## Live Demo
 
-Demo Flow (sequential steps):
+**https://striking-showing-celebrity-promised.trycloudflare.com/**
 
-locally hosted ecomm website --> PDP page with sponsored ad slot --> Demand Intelligence (mock complementary item + style) --> Prompt Generator (mock Gemini call) --> Arcade Engine (calls Arcade API chain: categories/list → patterns/create → products/create → checkouts/create, cached) --> Product image injected back into the HTML page's ad block
+Before you open the link, make sure your **ad blocker is off** for this site. Otherwise the sponsored ad slot will not appear.
 
+If you want to re-create this yourself, you are welcome to clone the repo and start a server locally (see Current Setup below).
 
-| Component | How It Uses Your Expertise | The Arcade API Hook |
-| --- | --- | --- |
-| Demand Intelligence (mock_complementary_item + prompt_generator) | Takes an input signal (product type) and returns a complementary product type + style, then makes a mock Gemini call to find the latest viral design aesthetic for that product + style. | Converts the trend into an optimal structural design prompt. |
-| The Arcade Engine | Calls the Arcade APIs (https://docs.arcade.ai/quickstart) using the confirmed chain: categories/list → patterns/create → products/create → checkouts/create. Returns the product image and checkout information. | Renders the live Arcade image and an "Instant Checkout" button right inside the banner. |
-| The Adtech Layer | A beautiful sponsored product banner embedded right inside a product page that instantly updates to display the viral item. | Injects the generated image back into the HTML page's ad block. |
+## Current Setup
 
-Instead of building a manual design storefront, your engine uses virality to identify community micro-trends and social signals, matches them to a curated aesthetic matrix, and automatically spits out a premium, shoppable product line into an interactive ad banner or social link. It treats the Arcade API as an on-demand, algorithmic fashion house.
+The demo lives in `web_store_ui/`:
 
-Note: The three components above (Demand Intelligence, Arcade Engine, Adtech Layer) run sequentially as steps in the demo — not as three side-by-side panels. The generated image is cached so repeated calls pull the same item and never call Arcade again.
+- **Stack:** plain Node.js with no npm dependencies (Node 18+).
+- **Store pages:** `web_store_ui/public/store/` (product pages with the ad slot), with static assets in `web_store_ui/public/`.
+- **Server:** `web_store_ui/server.js`, listening on `127.0.0.1:3000` by default (override with `PORT`).
+- **Arcade demo cache:** `web_store_ui/cache/` holds the generated images and raw API responses, so the app serves them without calling Arcade.
+- **Re-imagine:** the button in the ad banner runs the full workflow again and makes a fresh Arcade API call. This creates a new product in the Arcade account and overwrites the cached item for that product.
+
+### Run it locally
+
+```sh
+cd web_store_ui
+npm start
+```
+
+Then open `http://localhost:3000`.
+
+To make Instant Checkout work through the public tunnel link, start the server with the tunnel hostname in `PUBLIC_HOST`:
+
+```sh
+PUBLIC_HOST=striking-showing-celebrity-promised.trycloudflare.com npm start
+```
+
+Without `PUBLIC_HOST`, Instant Checkout works on localhost only. Re-imagine is localhost-only either way.
+
+### Other commands
+
+- `npm test`: runs the test suite.
+- `npm run generate-cache`: regenerates the Arcade demo cache. This needs `ARCADE_API_KEY` and creates a pattern and product in your Arcade account. Use it sparingly.
+
+### Sharing a public link
+
+The public URL above uses a Cloudflare quick tunnel to the local server:
+
+```sh
+cloudflared tunnel --url http://127.0.0.1:3000
+```
+
+Quick tunnel URLs are random and change each time the tunnel restarts.

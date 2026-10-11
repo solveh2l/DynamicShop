@@ -66,10 +66,14 @@ function serveFile(res, baseDir, relPath) {
 
 // The Re-imagine and checkout endpoints SPEND the user's Arcade account, so they only accept requests that
 // come from this app's own pages: a localhost Host header (blocks DNS rebinding), no foreign Origin, and a
-// JSON content type (which forces a CORS preflight that we never grant).
-function isSameOriginJson(req) {
-  const host = String(req.headers.host || '');
-  if (!/^(localhost|127\.0\.0\.1)(:\d+)?$/.test(host)) return false;
+// JSON content type (which forces a CORS preflight that we never grant). Checkout may also be opened through
+// the public host named in PUBLIC_HOST (e.g. a tunnel), since it does not generate anything new.
+function isSameOriginJson(req, { allowPublicHost = false } = {}) {
+  const host = String(req.headers.host || '').toLowerCase();
+  const publicHost = (process.env.PUBLIC_HOST || '').toLowerCase();
+  const isLocal = /^(localhost|127\.0\.0\.1)(:\d+)?$/.test(host);
+  const isPublic = allowPublicHost && publicHost !== '' && host === publicHost;
+  if (!isLocal && !isPublic) return false;
   const origin = req.headers.origin;
   if (origin) {
     try {
@@ -176,7 +180,7 @@ function createAppServer(deps = {}) {
       }
 
       if (req.method === 'POST' && url.pathname === '/api/checkout') {
-        if (!isSameOriginJson(req)) return sendJson(res, 403, { error: 'forbidden' });
+        if (!isSameOriginJson(req, { allowPublicHost: true })) return sendJson(res, 403, { error: 'forbidden' });
         const product = getProduct((await readBody(req)).slug);
         if (!product) return sendJson(res, 404, { error: 'unknown_product' });
         const { prompt } = buildAd(product);
