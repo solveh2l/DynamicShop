@@ -22,7 +22,7 @@ This is a mock hackathon project. Everything runs locally except the Arcade API 
 
 ## Live Demo
 
-**https://striking-showing-celebrity-promised.trycloudflare.com/**
+**https://dynamicshop-cwsa.onrender.com/**
 
 Before you open the link, make sure your **ad blocker is off** for this site. Otherwise the sponsored ad slot will not appear.
 
@@ -47,25 +47,19 @@ npm start
 
 Then open `http://localhost:3000`.
 
-To make Instant Checkout work through the public tunnel link, start the server with the tunnel hostname in `PUBLIC_HOST`:
+The hosted copy on Render sets `PUBLIC_HOST` to its own hostname, so Instant Checkout and Re-imagine work there. To run your own copy with those features on a different hostname, start the server with that hostname in `PUBLIC_HOST`:
 
 ```sh
-PUBLIC_HOST=striking-showing-celebrity-promised.trycloudflare.com npm start
+PUBLIC_HOST=your-host.example.com npm start
 ```
 
-Without `PUBLIC_HOST`, Instant Checkout and Re-imagine work on localhost only. With `PUBLIC_HOST` set, both also work on that hostname. Re-imagine needs `ARCADE_API_KEY` to be set on the server.
+Without `PUBLIC_HOST`, Instant Checkout and Re-imagine work on localhost only. Re-imagine needs `ARCADE_API_KEY` to be set on the server.
 
 ### Other commands
 
 - `npm test`: runs the test suite.
 - `npm run generate-cache`: regenerates the Arcade demo cache. This needs `ARCADE_API_KEY` and creates a pattern and product in your Arcade account. Use it sparingly.
 
-### Sharing a public link
+### Hosting
 
-The public URL above uses a Cloudflare quick tunnel to the local server:
-
-```sh
-cloudflared tunnel --url http://127.0.0.1:3000
-```
-
-Quick tunnel URLs are random and change each time the tunnel restarts.
+The public demo runs on Render as a web service, deployed from this repo. It sets `HOST=0.0.0.0` so the server accepts outside connections, and `PUBLIC_HOST` to its own hostname.
